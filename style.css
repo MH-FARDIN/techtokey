@@ -93,7 +93,7 @@ nav img {
 .text-box p {
     font-size: 14;
     margin: 20px 0px;
-    line-height: 28px;
+    line-height: 30px;
 }
 
 .text-box a {
@@ -177,5 +177,118 @@ nav .fa {
 
     }
 
+
+}
+
+/* ->->->->->->-> Services <-<-<-<-<-<-<- */
+
+.services {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 100px;
+}
+
+.services h2 {
+    font-size: 55px;
+}
+
+.services p {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px;
+
+}
+
+.services-row {
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.services-col {
+    flex-basis: 31%;
+    background: var(--p2-col);
+    border-radius: 15px;
+    padding: 15px 10px 10px 10px;
+    transition: 0.5s;
+
+
+}
+
+.services-col h3 {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.services-col:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+@media(max-width:1400px) {
+    .services h2 {
+        font-size: 40px;
+    }
+
+    .services-col h3 {
+        font-weight: 700;
+        font-size: 23px;
+    }
+}
+
+@media(max-width:1000px) {
+    .services h2 {
+        font-size: 35px;
+    }
+
+    .services-col h3 {
+        font-weight: 700;
+        font-size: 21px;
+    }
+}
+
+@media(max-width:850px) {
+    .services {
+        padding: 15px;
+        margin: auto;
+
+    }
+
+
+
+}
+
+@media(max-width: 700px) {
+    .services h2 {
+        font-size: 27px;
+
+
+    }
+
+    .services-col h3 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .services {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .services-row {
+        flex-direction: column;
+
+    }
+
+    .services-col {
+        margin: 10px 0px;
+    }
 
 }
