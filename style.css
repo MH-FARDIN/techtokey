@@ -12,7 +12,7 @@
 
 }
 
-body {
+.DOM {
     overflow-x: hidden;
 }
 
@@ -24,6 +24,7 @@ body {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/banner.png);
     background-position: center;
     background-size: cover;
+    /* overflow-x: hidden; */
 
 }
 
@@ -172,6 +173,9 @@ nav .fa {
         text-align: center;
         z-index: 10;
         transition: .7s;
+        overflow-x: hidden;
 
     }
+
+
 }
