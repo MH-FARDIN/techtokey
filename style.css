@@ -32,10 +32,19 @@
 nav {
     display: flex;
     flex-direction: row;
-    padding: 2% 6%;
+    padding: 1% 4% 0% 4%;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, .5);
+
+
 }
+
 
 nav img {
     width: 80px;
@@ -52,7 +61,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: white;
+    color: white !important;
     font-size: 13px;
     text-decoration: none;
 }
