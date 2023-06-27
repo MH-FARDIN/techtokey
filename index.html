@@ -7,28 +7,41 @@
     <title>Project 2</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> NOT NEEDED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <section class="header">
         <nav><a href="index.html">
-                <img src="img/logo.png" alt="image logo"></a>
-            <div class="nav-links">
+                <img src="img/t2k-2.png" alt="image logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xl fa-xmark " onclick="hideMenu()" style="color: #ffffff;"></i>
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                        <a href="#">Our Services</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Blogs</a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blogs</a></li>
                 </ul>
             </div>
+            <i class="fa fa-xl fa-bars" onclick="showMenu()" style="color: #ffffff;"></i>
         </nav>
+        <div class="text-box">
+            <h1>Tech To Key</h1>
+            <p>We are a tech company.<br> we can provide you services like website developing,<br> software developing
+                and
+                many
+                more
+                tech related services.</p><a href="#">Visit to us</a>
+
+        </div>
     </section>
 
 

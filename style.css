@@ -1,3 +1,4 @@
+/* MAIN */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --p-col: #5a8692;
+    --p2-col: #5a8692ae;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
 .header {
     width: 100%;
     min-height: 100vh;
@@ -15,43 +27,155 @@
 
 }
 
+/* NAV */
 nav {
     display: flex;
+    flex-direction: row;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img {
-    width: 150px;
+    width: 80px;
 }
 
 .nav-links {
-    flex: 1;
-    text-align: right;
+    /* flex: 1;
+    text-align: right; */
 }
 
-.nav-links ul li a {
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
+
+
 }
 
-.nav-links ul li a::after {
+.nav-links ul li a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-links ul li::after {
     content: "";
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: var(--p-col);
     display: block;
     margin: auto;
     transition: 0.5s ease-in-out;
 
 }
 
-.nav-links ul li a:hover {
+.nav-links ul li:hover::after {
     width: 100%;
+}
+
+/* HEADING */
+.text-box {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 37%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 70px;
+    display: inline-block;
+}
+
+.text-box h1 {
+    font-size: 65px;
+}
+
+.text-box p {
+    font-size: 14;
+    margin: 20px 0px;
+    line-height: 28px;
+}
+
+.text-box a {
+    color: rgb(130, 156, 251);
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 22px;
+    border: 1px solid rgb(130, 156, 251);
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.text-box a:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: var(--p-col);
+}
+
+nav .fa {
+    display: none;
+
+}
+
+/* ->->->->->->-> RESPONSIVE <-<-<-<-<-<-<- */
+
+@media(max-width:1400px) {
+    .text-box h1 {
+        font-size: 50px;
+    }
+
+
+}
+
+@media(max-width:1000px) {
+    .text-box h1 {
+        font-size: 40px;
+
+    }
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 30px;
+
+    }
+
+    nav .fa {
+        display: block;
+        margin: 20px;
+        text-align: left;
+    }
+
+
+    .text-box {
+        padding: 0px 25px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        /* text-align: center; */
+
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: var(--p-col);
+        height: 100vh;
+        width: 45vw;
+        top: 0;
+        right: -45vw;
+        border: 2px double white;
+        text-align: center;
+        z-index: 10;
+        transition: .7s;
+
+    }
 }
